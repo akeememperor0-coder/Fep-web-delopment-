@@ -137,7 +137,6 @@
     fetch('/api/projects', { method: 'POST', headers: authHeaders(), body: JSON.stringify(project) })
       .then(function(){
         document.getElementById('pTitle').value = '';
-        document.getElementById('pCategory').value = '';
         document.getElementById('pDescription').value = '';
         document.getElementById('pColor').value = '';
         document.getElementById('pPrice').value = '';
