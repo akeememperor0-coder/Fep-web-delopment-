@@ -130,7 +130,8 @@
       description: document.getElementById('pDescription').value,
       status: document.getElementById('pStatus').value,
       color: document.getElementById('pColor').value || undefined,
-      price: document.getElementById('pPrice').value || undefined
+      price: document.getElementById('pPrice').value || undefined,
+      link: document.getElementById('pLink').value || undefined
     };
     fetch('/api/projects', { method: 'POST', headers: authHeaders(), body: JSON.stringify(project) })
       .then(function(){
